@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Help"
+    android:id="@+id/content">
+
+    <TextView
+        android:id="@+id/txtWarnQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Name"
+        android:textColor="#fc0303"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/txtWarnEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:text="Name"
+        android:textColor="#fc0303"
+        android:visibility="gone"
+        android:layout_below="@+id/help_edttxt"/>
+
+    <EditText
+        android:id="@+id/help_edttxt"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#D6D8CA"
+        android:gravity="start"
+        android:hint="Ask any query" />
+
+    <EditText
+        android:id="@+id/email_edttxt"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/help_edttxt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#D6D8CA"
+        android:gravity="start"
+        android:hint="Enter you E-mail address" />
+
+    <Button
+        android:id="@+id/btn_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_edttxt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#387738"
+        android:text="Button" />
+
+
+</RelativeLayout>
